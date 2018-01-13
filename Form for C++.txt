@@ -1,0 +1,19 @@
+#include "MyForm.h"
+// Paste it in Myform.cpp or your Myform name
+using namespace System;
+using namespace System::ComponentModel;
+using namespace System::Collections;
+using namespace System::Windows::Forms;
+using namespace System::Data;
+using namespace System::Drawing;
+
+[STAThreadAttribute]
+int main(array<System::String ^> ^args)
+{
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+	Project1:: MyForm mainForm;                             // "MyForm" = your form name & "Project1" = Your project name
+	Application::Run(%mainForm);
+
+	return 0;
+}
